@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+
+<head>
+    <script data-require="angular130b18.js@*" src="scripts/angular130b18.js"></script>
+    <script src="scripts/script.js"></script>
+</head>
+
+<body>
+<div ng-controller="MainController">
+    <h1>{{message}}</h1>
+
+    <div>{{error}}</div>
+
+    <form name="searchWord" ng-submit="search(wordtospell)">
+
+        <input type="search" required placeholder="Word to Spell" ng-model="wordtospell" />
+        <input type="submit" value="Search">
+
+    </form>
+
+    <div>
+        <div>Spelling Word: {{wordtospell}}</div>
+    </div>
+
+</div>
+</body>
+</html>
